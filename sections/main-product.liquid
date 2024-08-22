@@ -460,8 +460,8 @@
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
                   render 'share-button', block: block, share_link: share_url
                 %}
-
-              <div class="bs-devshop bs-devshop--wrapper">
+{%- when 'bundle'%}
+                 <div class="bs-devshop bs-devshop--wrapper">
                 <div class="bs-devshop bs-devshop--title">
                   <h2 class="bs-devshop--m0 center">Pick your bundle below:</h2>
                 </div>
@@ -478,7 +478,7 @@
                         <h3 class="bs-devshop--m0 center dull-gray-color">1 Bottle</h3>
                         <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>16</span>!)</h4>
                       </div>
-                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg">
+                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg" data-variant-id="{{product.variants[0].id}}" data-selling-plan="689898094921">
                     </div>
                     <div class="bs-devshop bs-devshop--bundle-box bs-devshop--active-bundle-box">
                       <div class="bs-devshop bs-devshop--old-price ">
@@ -488,7 +488,7 @@
                         <h3 class="bs-devshop--m0 center dull-gray-color">3 Bottle</h3>
                         <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>83</span>!)</h4>
                       </div>
-                      <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePkg">
+                      <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePkg"  data-variant-id="{{product.variants[1].id}}" data-selling-plan="689898094921">
                     </div>
                     <div class="bs-devshop bs-devshop--bundle-box">
                       <div class="bs-devshop bs-devshop--old-price ">
@@ -498,7 +498,7 @@
                         <h3 class="bs-devshop--m0 center dull-gray-color">6 Bottle</h3>
                         <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>426</span>!)</h4>
                       </div>
-                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg">
+                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg" data-variant-id="{{product.variants[2].id}}" data-selling-plan="689898094921">
                     </div>
                   </div>
                 </div>
@@ -515,7 +515,7 @@
                     <div class="bs-devshop bs-devshop--option-price">
                       <h3 class="bs-devshop--m0 dull-gray-color">$130.00</h3>
                     </div>
-                    <input type="radio" class="bs-devshop--absolute-input" name="bundlePurchase">
+                    <input type="radio" class="bs-devshop--absolute-input" name="bundlePurchase" data-product-type="one-time">
                   </div>
                   <div class="bs-devshop bs-devshop--purchase-option bs-devshop--active-purchase-option">
                     <div class="bs-devshop bs-devshop--option bs-devshop--custom-radio-button">
@@ -532,7 +532,7 @@
                       <h3 class="bs-devshop--m0 dull-gray-color">$117.00</h3>
                       <p class="bs-devshop--m0 dull-gray-color">Every 3 months</p>
                     </div>
-                    <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePurchase">
+                    <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePurchase" data-product-type="recurring">
                   </div>
                 </div>
                 <div class="bs-devshop bs-devshop--delivery-wrapper">
@@ -584,7 +584,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> 
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
@@ -1062,6 +1062,11 @@
         }
       ]
     },
+         {
+      "type": "bundle",
+      "name": "Product Bundle"
+    },
+
     {
       "type": "custom_liquid",
       "name": "t:sections.custom-liquid.name",
