@@ -461,6 +461,131 @@
                   render 'share-button', block: block, share_link: share_url
                 %}
 
+              <div class="bs-devshop bs-devshop--wrapper">
+                <div class="bs-devshop bs-devshop--title">
+                  <h2 class="bs-devshop--m0 center">Pick your bundle below:</h2>
+                </div>
+                <div class="bs-devshop bs-devshop--package-wrapper">
+                  <div class="bs-devshop bs-devshop--popular-title bs-devshop--pt20 bs-devshop--pb10">
+                    <h3 class="bs-devshop--m0 bs-devshop--graidet-text center">Most popular!</h3>
+                  </div>
+                  <div class="bs-devshop bs-devshop--bundle-align bs-devshop--flex bs-devshop--gap20">
+                    <div class="bs-devshop bs-devshop--bundle-box">
+                      <div class="bs-devshop bs-devshop--old-price ">
+                        <h4 class="bs-devshop--m0 bs-devshop--gray-bg center dull-gray-color">Old price: <span>$71</span> </h4>
+                      </div>
+                      <div class="bs-devshop bs-devshop--pkg-detail bs-devshop--gray-bg bs-devshop-thic-border">
+                        <h3 class="bs-devshop--m0 center dull-gray-color">1 Bottle</h3>
+                        <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>16</span>!)</h4>
+                      </div>
+                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg">
+                    </div>
+                    <div class="bs-devshop bs-devshop--bundle-box bs-devshop--active-bundle-box">
+                      <div class="bs-devshop bs-devshop--old-price ">
+                        <h4 class="bs-devshop--m0 bs-devshop--gray-bg center dull-gray-color">Old price: <span>$213</span> </h4>
+                      </div>
+                      <div class="bs-devshop bs-devshop--pkg-detail bs-devshop--gray-bg bs-devshop-thic-border">
+                        <h3 class="bs-devshop--m0 center dull-gray-color">3 Bottle</h3>
+                        <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>83</span>!)</h4>
+                      </div>
+                      <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePkg">
+                    </div>
+                    <div class="bs-devshop bs-devshop--bundle-box">
+                      <div class="bs-devshop bs-devshop--old-price ">
+                        <h4 class="bs-devshop--m0 bs-devshop--gray-bg center dull-gray-color">Old price: <span>$426</span> </h4>
+                      </div>
+                      <div class="bs-devshop bs-devshop--pkg-detail bs-devshop--gray-bg bs-devshop-thic-border">
+                        <h3 class="bs-devshop--m0 center dull-gray-color">6 Bottle</h3>
+                        <h4 class="bs-devshop--m0 center dull-gray-color">(Save $<span>426</span>!)</h4>
+                      </div>
+                      <input type="radio" class="bs-devshop--absolute-input" name="bundlePkg">
+                    </div>
+                  </div>
+                </div>
+                <div class="bs-devshop bs-devshop--title">
+                  <h2 class="bs-devshop--m0 bs-devshop--pb10 bs-devshop--pt10 center">Pick your purchase option:</h2>
+                </div>
+                <div class="bs-devshop bs-devshop--purchase-wrapper">
+                  <div class="bs-devshop bs-devshop--purchase-option bs-devshop--purchase-option-top">
+                    <div class="bs-devshop bs-devshop--option bs-devshop--custom-radio-button">
+                      <div class="bs-devshop bs-devshop--radio-box">
+                        <h4 class="bs-devshop--m0 dull-gray-color">One time purchase</h4>
+                      </div>
+                    </div>
+                    <div class="bs-devshop bs-devshop--option-price">
+                      <h3 class="bs-devshop--m0 dull-gray-color">$130.00</h3>
+                    </div>
+                    <input type="radio" class="bs-devshop--absolute-input" name="bundlePurchase">
+                  </div>
+                  <div class="bs-devshop bs-devshop--purchase-option bs-devshop--active-purchase-option">
+                    <div class="bs-devshop bs-devshop--option bs-devshop--custom-radio-button">
+                      <div class="bs-devshop bs-devshop--radio-box">
+                        <h4 class="bs-devshop--m0 dull-gray-color"> Upgrade to sub & <span class="bs-devshop--primary-cart">save 10%</span>! </h4>
+                        <p class="bs-devshop--m0 dull-gray-color">Get Sabre consistently and never run out of peak performance. Cancel anytime.</p>
+                      </div>
+                    </div>
+                    <div class="bs-devshop bs-devshop--option-price">
+                      <div class="bs-devshop bs-devshop--align-dicsount">
+                        <span class="bs-devshop bs-devshop--off">$13 off!</span>
+                        <span class="bs-devshop bs-devshop--cut-price">$13 off!</span>
+                      </div>
+                      <h3 class="bs-devshop--m0 dull-gray-color">$117.00</h3>
+                      <p class="bs-devshop--m0 dull-gray-color">Every 3 months</p>
+                    </div>
+                    <input type="radio" class="bs-devshop--absolute-input" checked name="bundlePurchase">
+                  </div>
+                </div>
+                <div class="bs-devshop bs-devshop--delivery-wrapper">
+                  <div class="bs-devshop bs-devshop--delivery-badge">
+                    <img src="{{ 'shipping-bus.png' | asset_url }}" alt=""> 
+                    <p class="bs-devshop--m0">FAST DELIVERY</p>
+                  </div>
+                  <div class="bs-devshop bs-devshop--shipping-day">
+                    <p class="bs-devshop--m0"> Ships the same day. </p>
+                  </div>
+                </div>
+                <div class="bs-devshop bs-devshop--checkout-button">
+                  <button type="button" class="bs-devshop bs-devshop--cart-btn"> 
+                    <img src="{{ 'cart-icon.png' | asset_url }}" alt=""> 
+                    Proceed to checkout
+                  </button>
+                </div>
+                <div class="bs-devshop bs-devshop--trust-wrapper">
+                  <div class="bs-devshop bs-devshop--trust-align">
+                    <p class="bs-devshop--m0"> 
+                      <img src="{{ 'rating-badge.png' | asset_url }}" alt="">
+                      Money-back guarantee 
+                    </p>
+                  </div>
+                  <div class="bs-devshop bs-devshop--trust-align">
+                    <p class="bs-devshop--m0"> 
+                      <img src="{{ 'fast-bus-icon.png' | asset_url }}" alt="">
+                      Free 3 day shipping in US 
+                    </p>
+                  </div>
+                </div>
+                <div class="bs-devshop bs-devsho--payments-wrapper">
+                  <div class="bs-devshop bs-devshop--payment-box">
+                    <div class="bs-devshop bs-devshop--payment-cards">
+                      <img src="{{ 'visa-cards.png' | asset_url }}" alt="">
+                    </div>
+                    <div class="bs-devshop bs-devshop--other-payment">
+                      <img src="{{ 'apple-pay.png' | asset_url }}" alt="">
+                      <img src="{{ 'after-pay.png' | asset_url }}" alt="">
+                    </div>
+                  </div>
+                  <div class="bs-devshop bs-devshop--checkout-encryption bs-devshop--payment-box">
+                    <p class="bs-devshop--m0">
+                      <img src="{{ 'lock-icon.png' | asset_url }}" alt="">
+                      Shop with confidence
+                    </p>
+                    <p class="bs-devshop--m0">
+                      Your checkout is 256-bit encrypted.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
