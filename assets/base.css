@@ -4092,3 +4092,12 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+
+.ab__test:not(.ab__test--active-test) {
+  display: none !important;
+}
+
+.ab__test-hide.ab__test--active-test {
+  display: none !important;
+}
