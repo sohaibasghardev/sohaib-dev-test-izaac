@@ -4095,9 +4095,9 @@ details-disclosure > details {
 
 
 .ab__test:not(.ab__test--active-test) {
-  display:  !important;
+  display: none !important;
 }
 
 .ab__test-hide.ab__test--active-test {
-  display:  !important;
+  display: none !important;
 }
