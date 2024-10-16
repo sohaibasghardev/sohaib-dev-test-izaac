@@ -31,13 +31,20 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "square"
           }
         },
+        "bundle_xAUb7F": {
+          "type": "bundle",
+          "settings": {
+          }
+        },
         "recharge_subscriptions_subscription_widget_AAHEhA": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -59,11 +66,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "bundle_xAUb7F": {
-          "type": "bundle",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -71,11 +73,11 @@
         "title",
         "price",
         "variant_picker",
+        "bundle_xAUb7F",
         "recharge_subscriptions_subscription_widget_AAHEhA",
         "buy_buttons",
         "description",
-        "share",
-        "bundle_xAUb7F"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
