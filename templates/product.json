@@ -29,17 +29,17 @@
           "settings": {
           }
         },
+        "bundle_xAUb7F": {
+          "type": "bundle",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "square"
-          }
-        },
-        "bundle_xAUb7F": {
-          "type": "bundle",
-          "settings": {
           }
         },
         "recharge_subscriptions_subscription_widget_AAHEhA": {
@@ -80,8 +80,8 @@
         "vendor",
         "title",
         "price",
-        "variant_picker",
         "bundle_xAUb7F",
+        "variant_picker",
         "recharge_subscriptions_subscription_widget_AAHEhA",
         "buy_buttons",
         "description",
