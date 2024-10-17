@@ -4100,3 +4100,8 @@ details-disclosure > details {
 .ab__test-hide.ab__test--active-test {
   display: none !important;
 }
+
+
+form#product-form-installment-template--23622105956641__main {
+    display: none;
+}
