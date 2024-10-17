@@ -67,6 +67,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "popup_YKadhM": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": "contact"
+          }
         }
       },
       "block_order": [
@@ -78,7 +85,8 @@
         "recharge_subscriptions_subscription_widget_AAHEhA",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "popup_YKadhM"
       ],
       "settings": {
         "enable_sticky_info": true,
