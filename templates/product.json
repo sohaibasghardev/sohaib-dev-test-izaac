@@ -37,7 +37,14 @@
         "recharge_subscriptions_subscription_widget_tdKF3Y": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
-            "product": "{{product}}"
+            "product": "{{ product }}"
+          }
+        },
+        "popup_TgBHiP": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": ""
           }
         }
       },
@@ -46,7 +53,8 @@
         "price",
         "bundle_xAUb7F",
         "variant_picker_EycfDn",
-        "recharge_subscriptions_subscription_widget_tdKF3Y"
+        "recharge_subscriptions_subscription_widget_tdKF3Y",
+        "popup_TgBHiP"
       ],
       "settings": {
         "enable_sticky_info": true,
